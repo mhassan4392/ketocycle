@@ -1,0 +1,27 @@
+
+
+// medium size
+@include mediaMd{
+
+    .summary-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+// small size
+@include mediaSm{
+    .summary-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+// large size
+@include mediaLg{
+    .summary-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+// extra large size
+@include mediaXl{
+}

@@ -1,0 +1,19 @@
+// bottom footer of the document
+
+.footer-list li{
+    list-style-type: none;
+}
+
+.footer-list a{
+    text-decoration: none;
+    color: #636b6f;
+}
+
+.footer-list a:hover{
+    color: #444 !important;
+    text-decoration: underline;
+}
+
+.footer-logo{
+    width: 150px;
+}

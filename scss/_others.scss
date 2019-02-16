@@ -1,0 +1,329 @@
+.page-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../images/landing-bg-desktop.jpg') no-repeat top center;
+    background-size: cover;
+
+    &.checkout-page-container{
+        background: url('../images/billing-bg-desktop.jpg') no-repeat top right;
+        background-size: contain;
+        height: 130vh;
+    }
+}
+
+/* .landing-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+} */
+
+
+
+// front-page showcase
+
+.showcase h1{
+    font-weight: bold;
+}
+
+.gender-btn{
+    background: white;
+    width: 240px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+
+.gender-btn:hover{
+    color: $gray-clr;
+    transition: all 0.5s ease-out;
+}
+
+.btn-male{
+    color: $blue-clr;
+    box-shadow: 1px 1px 5px $blue-clr;
+}
+
+.btn-female{
+    color: $pink-clr;
+    box-shadow: 1px 1px 5px $pink-clr;
+}
+
+.male{
+    width: 30px;
+    height: 30px;
+}
+
+.female{
+    width: 30px;
+    height: 30px;
+}
+
+.gender-btn .fa{
+    font-size: 1.6rem;
+}
+
+
+
+
+// // // //  steps section // // // // 
+.form-steps{
+    display:none;
+    margin: 15vh 0;
+    .card{
+        .card-header{
+            background-color: white;
+            .fa{
+                font-size: 2.5rem;
+                font-weight: bold;
+                color: $blue-clr;
+                cursor: pointer;
+            }
+            img{
+                width: 150px;
+            }
+        }
+        .progress{
+            height: 5px;
+        }
+        .card-body{
+            .input-grid{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 5px;
+                box-shadow: 0 4px 11px -7px rgba(0,0,0,.2);
+                margin-bottom: 10px;
+                border-radius:  5px 0 0 5px;
+                cursor: pointer;
+                .input-text{
+                    padding: 0 15px;
+                    color: #444;
+                }
+                .input-icon{
+                    background-color: #e4e5e7;
+                    color: white;
+                    border-radius: 0 5px 5px 0;
+                    padding: 15px 9px;
+                    width: 30px;
+                    text-align: center;
+                    .fa{
+                        font-weight: 200;
+                        font-size: 0.7rem;
+                    }
+                    .fa-plus{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .input-grid-active{
+                box-shadow: 0 4px 11px -7px rgba(0,0,0,.9);
+                .input-text{
+                    color: $pink-clr;
+                    //font-size: 1.1rem;
+                    font-weight: 400;
+                }
+                .input-icon{
+                    background-color: $blue-clr;
+                }
+            }
+        }
+    }
+    .measurement-btns{
+        display: none;
+        padding: 30px 0;
+        background: #e4e5e7;
+        margin-bottom: 20px;
+        .btn{
+            width: 180px;
+            // padding: 8px 60px;
+            color: $gray-clr;
+            margin: 0 10px;
+            border-radius: 20px;
+            background: none;
+            border: 1px solid $gray-clr;
+            font-weight: bold;
+
+            &.active-btn{
+                background: white;
+                color: $pink-clr;
+                border: 1px solid white;
+                box-shadow: 0 4px 11px -7px rgba(0,0,0,.9);
+
+                &:hover{
+                    color: $pink-clr;
+                }
+            }
+        }
+    }
+
+    form{
+        input{
+            border: none;
+            border-bottom: 1px solid #e4e5e7;
+            border-radius: none;
+        }
+        .form-group{
+            position: relative;
+            .units{
+                position: absolute;
+                right: 5px;
+                top: 8px;
+                color: $pink-clr;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .matric-form{
+        display: none;
+    }
+}
+
+
+
+
+
+
+// // // // summary page // // // //
+.summary{
+    .summary-grid{
+        display: grid;
+        grid-gap: 2rem;
+
+        .grid-col{
+           
+           box-shadow: 0 4px 11px -2px rgba(86,70,143,.3);
+
+           h4{
+               font-weight: bold;
+
+               small{
+                   font-size: 0.7rem;
+                   display:block;
+               }
+           }
+        }
+    }
+}
+
+
+.email-form{
+    display: none;
+    padding: 15vh 0;
+    .card-header{
+        background-color: white;
+        .fa{
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: $blue-clr;
+            cursor: pointer;
+        }
+        img{
+            width: 150px;
+        }
+    }
+
+    input{
+        border: none;
+        border-bottom: 1px solid #e4e5e7;
+        border-radius: none;
+    }
+}
+
+
+
+// // // checkout page // // //
+
+.checkout-page{
+    .money-back-img{
+        width: 600px;
+    }
+    .dot{
+        font-size: 3rem;
+    }
+
+    .covered{
+        background-color: #ff34640d;
+    }
+
+    .card{
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0 4px 11px -2px rgba(86,70,143,.3);
+        cursor: pointer;
+
+        .card-info{
+            background: $pink-clr;
+            color: white;
+            border-radius: 20px;
+            position: absolute;
+            padding: 1px 15px;
+            top: -15px;
+            margin: 0 auto;
+        }
+        .card-header{
+            background-color: #aa9cdf;
+            color: white;
+            padding: 20px 0;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-body{
+            .bg-pink{
+                background-color: #ff34640d;
+                color: $pink-clr;
+                display: inline;
+                padding: 5px 8px ;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+            .price{
+                .number{
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+            .card-body-info{
+                .bg-pink{
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                }
+                .flex-text{
+                    font-size: 0.8rem;
+                }
+                .fa{
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+            }
+        }
+        .card-footer{
+            background: white;
+            color: darken(#e4e5e7, 30);
+            font-size: 0.9rem;
+            border-radius:  0 0 10px 10px;
+        }
+
+        &.active-plan{
+            border: 1px solid $blue-clr;
+
+            .card-header{
+                background-color: $blue-clr;
+            }
+        }
+    }
+
+    .agree-terms{
+        font-size: 0.8rem;
+    }
+}

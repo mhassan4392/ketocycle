@@ -1,0 +1,45 @@
+.clr-pink{
+    color: $pink-clr;
+}
+
+.clr-blue{
+    color: $blue-clr;
+}
+
+.clr-gray{
+    color: $gray-clr;
+}
+
+.btn-pink{
+    background: $pink-clr;
+    border-radius: 25px;
+    padding: 11px 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    &:hover{
+        color: white;
+        background: darken($pink-clr, 10);
+    }
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.bg-pink{
+    background-color: $pink-clr;
+}
+
+.bg-pink-light{
+    background-color: rgba($pink-clr, 0.3);
+}
+
+.bg-blue{
+    background-color: $blue-clr;
+}
+
+.bg-blue-light{
+    background-color: rgba($blue-clr, 0.5);
+}
