@@ -63,10 +63,23 @@
                       <div class="summary-grid">
                           <div class="grid-col"> 
                             <h4 class="my-3 px-3">BMI</h4>
-                            <div></div>
+                            <div class="bmi-grid">
+                                <div>
+                                    <div class="bmi-number"></div>
+                                    <div class="bmi-weight">Underweight</div>
+                                </div>
+                                <div>
+                                    <div class="bmi-number active-number">20.3</div>
+                                    <div class="bmi-weight active-weight">Normal</div>
+                                </div>
+                                <div>
+                                    <div class="bmi-number"></div>
+                                    <div class="bmi-weight">Overweight</div>
+                                </div>
+                            </div>
                             <div class="my-3 px-3">
                                 <div>Your current BMI:</div>
-                                <div>Class III Obesity</div>
+                                <div class="clr-pink">Normal</div>
                             </div>
                           </div>
 
@@ -74,7 +87,11 @@
                                 <h4 class="my-3 px-3">
                                         Calorie intake
                                 </h4>
-                                <div class="text-center">
+                                <div class="text-center grid-img">
+                                    <div class="grid-img-text clr-blue pt-3">
+                                        <div>~1050 - 1350</div>
+                                        <div><small>calories</small></div>
+                                    </div>
                                     <img src="images/calorie-intake.webp" class="img-fluid" alt="">
                                 </div>
                                 <div class="my-3 px-3">
@@ -91,7 +108,7 @@
                                 <div class="text-center">
                                     <img src="images/nutrients.webp" class="img-fluid w-100" alt="">
                                 </div>
-                                <div class="my-3 px-3">
+                                <div class="mt-5 px-3">
                                     <div>Percentage of fat, protein and carbs in the Keto diet</div>
                                 </div>
                             </div>
@@ -100,7 +117,10 @@
                                 <h4 class="my-3 px-3">
                                     Water intake
                                 </h4>
-                                <div class="text-center">
+                                <div class="text-center grid-img">
+                                    <div class="grid-img-text text-white f-2 pt-3">
+                                        <div>1.8 liters</div>
+                                    </div>
                                     <img src="images/water-intake.svg" class="img-fluid w-100" alt="">
                                 </div>
                                 <div class="my-3 px-3">
@@ -126,7 +146,10 @@
                                 <h4 class="my-3 px-3">
                                     Achievable weight 119 lb
                                 </h4>
-                                <div class="text-center">
+                                <div class="text-center grid-img">
+                                    <div class="grid-img-text clr-blue f-2 pt-5 mt-4">
+                                        <div>143.3 lb</div>
+                                    </div>
                                     <img src="images/achievable-weight.svg" class="img-fluid" alt="">
                                 </div>
                                 <div class="my-3 px-3">
@@ -212,7 +235,11 @@
                                 <h4 class="my-3 px-3">
                                     Meals
                                 </h4>
-                                <div class="text-center">
+                                <div class="text-center grid-img">
+                                    <div class="grid-img-text clr-pink pt-3">
+                                        <div class="f-2">57</div>
+                                        <div><small>Unique recipes</small></div>
+                                    </div>
                                     <img src="images/meals.svg" class="img-fluid" alt="">
                                 </div>
                                 <div class="my-3 px-3">
@@ -258,8 +285,9 @@
                                 <h3>We've created a personalized Keto diet plan that will help you to achieve your goals. Please enter your email.</h3>
                                 <form action="#">
                                     <div class="form-group my-3">
-                                        <input type="email" placeholder="Enter your email address" class="form-control">
+                                        <input type="email" name="email" id="email_input" placeholder="Enter your email address" class="form-control">
                                     </div>
+                                    <div class="text-center form-danger">Please provide a valid email</div>
                                     <input type="submit" value="Next" class="btn btn-pink btn-block mt-4 email-form-btn">
                                 </form>
                             </div>
