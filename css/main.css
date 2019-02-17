@@ -210,13 +210,22 @@
           border-bottom: 4px solid #56468f;
           background: #f6f5f9; }
       .summary .summary-grid .grid-col .bmi-grid .bmi-weight {
+        position: relative;
         border-top: 4px solid #e8e5ef;
+        font-size: 0.8rem;
         padding: 20px 0; }
         .summary .summary-grid .grid-col .bmi-grid .bmi-weight.active-weight {
           border-top: 4px solid #56468f;
           background-color: #f6f5f9;
           color: #56468f;
           font-weight: bold; }
+        .summary .summary-grid .grid-col .bmi-grid .bmi-weight .pink-dot {
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          background: #ff3464;
+          border-radius: 50%;
+          top: -17px; }
     .summary .summary-grid .grid-col .grid-img {
       position: relative; }
       .summary .summary-grid .grid-col .grid-img .grid-img-text {
