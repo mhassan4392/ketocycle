@@ -43,3 +43,13 @@
 .bg-blue-light{
     background-color: rgba($blue-clr, 0.5);
 }
+
+.f-2{
+    font-size: 2rem;
+}
+
+.form-danger{
+    color: $pink-clr;
+    padding: 20px 0;
+    display: none;
+}

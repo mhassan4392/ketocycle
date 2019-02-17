@@ -213,6 +213,65 @@
                    display:block;
                }
            }
+           .bmi-grid{
+               display: grid;
+               grid-template-columns: repeat(3,1fr);
+               text-align: center;
+
+               .bmi-number{
+                   height: 120px;
+                   font-weight: 400;
+                   font-size: 2rem;
+                   color: $pink-clr;
+                   padding-top: 50%;
+                   &.active-number{
+                        border-bottom: 4px solid $blue-clr;
+                        background: #f6f5f9;
+                    }
+               }
+               .bmi-weight{
+                   position: relative;
+                    border-top: 4px solid darken(#f6f5f9, 5);
+                    font-size: 0.8rem;
+                   padding: 20px 0;
+                   &.active-weight{
+                       border-top: 4px solid $blue-clr;
+                       background-color: #f6f5f9;
+                       color: $blue-clr;
+                       font-weight: bold;
+                   }
+
+                   .pink-dot{
+                       position: absolute;
+                       width: 25px;
+                       height: 25px;
+                       background: $pink-clr;
+                       border-radius: 50%;
+                       top: -17px;
+                   }
+               }
+
+               
+               
+           }
+
+           .grid-img{
+            position: relative;
+
+            .grid-img-text{
+                position: absolute;
+                // top: 50%;
+                // left: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                height: 100%;
+                font-weight: bold;
+            }
+        }
         }
     }
 }
